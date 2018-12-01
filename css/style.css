@@ -1,0 +1,10 @@
+.container-fluid {
+    max-width: 960px;
+}
+
+.jumbotron {
+    color: #fff;
+    background-color: #20315b;
+    text-align: center;
+    
+}

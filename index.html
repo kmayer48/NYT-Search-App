@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NYT Search</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <header class="jumbotron">
+            <h1> <i class="far fa-newspaper"> </i> New York Times Search</h1>
+        </header>
+
+        <div class="list-group mb-4" id="search-form">
+            <div class="list-group-item list-group-item-secondary"><i class="far fa-calendar-alt"></i> Search Parameters</div>
+            <form class="list-group-item">
+                <div class="form-group">
+                    <label for="search-term">Search Term</label>
+                    <textarea class="form-control" id="search-term" rows="1"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="number-of-results">Number of records to retrieve:</label>
+                    <select class="form-control" id="number-of-results">
+                        <option>5</option>
+                        <option>10</option>
+                        <option>15</option>
+                        <option>20</option>
+                        <option>25</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="search-term">Start Year (optional)</label>
+                    <textarea class="form-control" id="start-year" rows="1"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="search-term">End Year (optional)</label>
+                    <textarea class="form-control" id="end-year" rows="1"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="start-search"> <i class="fas fa-search"> </i> Search</button>
+                <button type="reset" class="btn btn-danger" id="clear-search"> <i class="far fa-trash-alt"></i> Clear Searches</button>
+            </form>
+
+        </div>
+
+        <div class= "list-group mb-20" id="search-results-container">
+            <div class="list-group-item list-group-item-secondary"> <i class="far fa-newspaper"> </i> Top Articles</div>
+            <div class="list-group-item" id="search-results"></div>
+        </div>
+
+        
+
+
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/logic.js"></script>
+    
+</body>
+
+</html>
